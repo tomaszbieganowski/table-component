@@ -1,16 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header></header>
+    <section>
+      <UserTable 
+      endpoint="https://jsonplaceholder.typicode.com/users"
+      v-bind:search="true"
+      v-bind:sorting="true"
+      v-bind:pagination="true"
+      />
+    </section>
+    <footer></footer>
 </template>
 
 <script>
 import UserTable from './components/UserTable.vue'
 
-
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    UserTable
   }
 }
 </script>
@@ -22,6 +29,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
