@@ -4,7 +4,8 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserTable from './components/UserTable.vue'
+
 
 export default {
   name: 'App',
